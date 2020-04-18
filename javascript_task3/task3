@@ -35,3 +35,4 @@ return true;
 }
 
 tibesti(100);
+tibesti(67);
