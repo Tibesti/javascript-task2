@@ -1,0 +1,37 @@
+function tibesti (number){
+
+let display = [];
+
+    for(i=1; i<=number; i++){
+        if(i%2===0 && i%3===0 && i%5===0){
+            display.push("yu-gi-oh");
+        }
+        else if(i%3===0 && i%5===0){
+            display.push("gi-oh");
+        }
+        else if(i%2===0 && i%5===0){
+            display.push("yu-oh");
+        }
+        else if(i%2===0 && i%3===0){
+            display.push("yu-gi");
+        }
+        else if(i%5===0){
+            display.push("oh");
+        }
+        else if(i%3===0){
+            display.push("gi");
+        }
+        else if(i%2===0){
+            display.push("yu");
+        }
+        else{
+            display.push(i);
+        }
+    }
+
+console.log(display);
+return true;
+
+}
+
+tibesti(100);
